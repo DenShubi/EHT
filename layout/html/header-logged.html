@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="layout/css/header-logged.css">
+    <link rel="stylesheet" href="layout/css/general.css">
+</head>
+
+<body>
+    <div class="header">
+
+        <div class="left-section">
+            <a href="main-logged.php" class="logo">
+                EHT
+            </a>
+        </div>
+
+        <div class="middle-section">
+            <div class="search-container">
+                <img class="search-icon" src="layout/Icon/search-icon.svg" alt="Search Icon">
+                <input class="search-bar" type="text" placeholder="Pencarian EHT">
+            </div>
+        </div>            
+
+        <div class="right-section">
+          
+            <a href="messages.php">
+                <img class="messages-icon" src="layout/Icon/messages.svg" alt="Messages">
+            </a>
+            <a href="create-post.php">
+                <img class="create-post-icon" src="layout/Icon/create-post.svg" alt="Create Post">
+            </a>
+            <a href="notifications.php">
+                <img class="notification-icon" src="layout/Icon/notification.svg" alt="Notifications">
+            </a>
+            
+            <img 
+            class="profile-icon" 
+            id="profile-icon" 
+            src="<?= isset($_SESSION['profile_picture']) && !empty($_SESSION['profile_picture']) 
+                    ? htmlspecialchars($_SESSION['profile_picture']) 
+                    : 'layout/Profile/default-profile.jpg' ?>" 
+            alt="Profile">
+        
+        
+
+
+
+
+            <div id="profile-container-overlay" class="profile-container-overlay">
+
+                <a href="profile.php" class="profile-overlay">
+                    <img class="profile-icon" src="layout/Icon/profile.svg" alt="Profile Icon">
+                    <p class="text-overlay">Profile</p>
+                </a>
+
+                <a href="setting.php" class="profile-overlay">
+                    <img class="setting-icon" src="layout/Icon/setting.svg" alt="Settings Icon">
+                    <p class="text-overlay">Pengaturan</p>
+                </a>
+                
+                <!-- <a href="dark-mode.php" class="profile-overlay">
+                    <img class="dark-mode-icon" src="layout/Icon/dark-mode.svg" alt="Dark Mode Icon">
+                    <p class="text-overlay">Mode Malam</p>
+                </a> -->
+
+            </div>            
+            
+        </div>
+
+    </div>
+
+</body>
+
+<script src="layout/javascript/overlay.js"></script>
+
+</html>

@@ -1,0 +1,65 @@
+.judul-fitur{
+    color: #000;
+    font-family: Helvetica;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 40px;
+    z-index: 300;
+    width: 500px;
+}
+
+.text-create-post{
+    color: #000;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.input-judul-text{
+    width: 400px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: rgb(255, 255, 255);
+    border: 0;
+    margin-bottom: 20px;
+}
+
+.input-desc-text {
+    width: 400px;
+    height: 250px;
+    border-radius: 4px;
+    background: rgb(255, 255, 255);
+    border: none;
+    font-family: Helvetica;
+    font-size: 14px;
+    line-height: 1.5;
+    resize: none;
+    border: 0;
+    margin-bottom: 20px;
+}
+
+button{
+    margin-right: 20px;
+    display: inline-flex;
+    height: 30px;
+    padding: 7px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+    background-color: none;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover{
+    background-color: rgba(201, 104, 104, 1);
+}

@@ -1,0 +1,113 @@
+/* Menghapus margin dan padding default pada body */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Pastikan body mengambil tinggi penuh viewport */
+    overflow: hidden; /* Menghindari scrollbar */
+    display: flex;
+    flex-direction: column; /* Agar body dapat mengakomodasi header dan body konten */
+}
+
+/* Header tetap */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 54px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(250, 223, 161, 1);
+    border-width: 4px;
+    border-style: solid;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+/* Kontainer body menggunakan flexbox */
+.body {
+    display: flex; /* Mengatur elemen anak berjajar horizontal */
+    justify-content: space-between; /* Mengatur jarak antar elemen */
+    align-items: flex-end; /* Mulai dari bawah */
+    width: 100vw; /* Lebar 100% dari viewport */
+    min-height: calc(100vh - 54px); /* Menggunakan 100% dari tinggi layar dikurangi tinggi header */
+    padding: 0; /* Menghapus padding default */
+    overflow: hidden; /* Menghindari overflow */
+}
+
+/* Elemen teks */
+p {
+    writing-mode: vertical-rl; /* Membuat teks vertikal */
+    text-align: center; /* Mengatur teks rata tengah */
+    color: #000; /* Warna hitam */
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    -webkit-text-stroke: 0px transparent; /* Awalnya tanpa stroke */
+    transition: all 0.3s ease; /* Animasi transisi untuk efek halus */
+    transform: rotate(180deg);
+}
+
+/* Hover untuk efek stroke */
+p:hover {
+    -webkit-text-stroke: 4px #000; /* Stroke hitam dengan ketebalan 4px */
+    color: transparent; /* Membuat warna teks transparan */
+    transition: all 0.3s ease; /* Efek transisi */
+}
+
+/* Setiap div yang berisi teks, memberikan ukuran sama */
+.profile, .komunitas, .donasi, .visi-misi, .blog {
+    display: flex;
+    justify-content: center; /* Menyusun teks di tengah secara horizontal */
+    align-items: flex-end; /* Menyusun teks sedikit lebih ke atas */
+    width: 100vw; /* Lebar 100% dari viewport */
+    height: 100vh; /* Tinggi 100% dari viewport */
+    padding: 30px; /* Memberikan jarak dari atas */
+    margin-bottom: 0; /* Menghapus margin bawah agar tidak ada gap */
+    transition: all 0.3s ease; /* Menambahkan efek transisi untuk smooth hover */
+    cursor: pointer; /* Menambah pointer untuk menunjukkan area interaktif */
+}
+
+.profile:hover p, .komunitas:hover p, .donasi:hover p, .visi-misi:hover p, .blog:hover p {
+    -webkit-text-stroke: 4px #000; /* Stroke hitam dengan ketebalan 4px */
+    color: transparent; /* Membuat warna teks transparan */
+    transition: all 0.3s ease; /* Efek transisi untuk teks */
+}
+
+/* Set background dengan transparansi berbeda */
+.profile {
+    background-color: rgba(126, 172, 181, 1);
+}
+
+.komunitas {
+    background-color: rgba(126, 172, 181, 0.8);
+}
+
+.donasi {
+    background-color: rgba(126, 172, 181, 0.6);
+}
+
+.visi-misi {
+    background-color: rgba(126, 172, 181, 0.4);
+}
+
+.blog {
+    background-color: rgba(126, 172, 181, 0.2);
+}
+
+a {
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: inherit; /* Mengambil warna teks dari elemen induk */
+    display: flex; /* Menjaga agar layout tetap sama */
+}
+
+/* Pastikan elemen yang dihover tetap memiliki efek hover */
+a:hover p {
+    -webkit-text-stroke: 4px #000;
+    color: transparent;
+    transition: all 0.3s ease;
+}

@@ -1,0 +1,183 @@
+.post-container {
+    display: grid;
+    gap: 10px;
+    width: 100%;
+    max-width: 716px; 
+    margin: 0;
+}
+
+
+.post-card {
+    display: flex;
+    width: 100%; 
+    padding: 6px 14px;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    background: rgba(157, 136, 136, 0.00);
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.post-card:hover {
+    background: rgba(201, 104, 104, 0.8);
+}
+
+.profile-picture {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%; 
+    background-color: rgb(251, 251, 251);
+    border: 2px;
+    border-style: solid;
+}
+
+.username {
+    color: #000;
+    font-family: Helvetica;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.judul-post{
+    width: 688px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Segoe UI";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.32px;
+}
+
+.profile-post {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+    margin-bottom: 9px; 
+}
+
+.judul-post {
+    width: 688px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Segoe UI";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    margin-bottom: 9px;
+
+}
+
+.description-post{
+    width: 688px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Segoe UI";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.13px;
+    margin-bottom: 9px;
+
+}
+
+.status-post {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    gap: 10px;
+}
+
+.vote-button {
+    display: flex;
+    gap: 4px; 
+}
+
+.up-button,
+.down-button {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background: rgb(251, 251, 251);
+    border: none;
+    padding: 0;
+    border-radius: 15px;
+    height: 30px;
+    width: 30px;
+    border: 2px;
+    border-style: solid;
+}
+
+/* .vote-number{
+    color: #000;
+    font-family: "Segoe UI";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: #E8E8E8;
+    padding: 7px 15px 7px 15px;
+} */
+
+.comment-button {
+    display: flex;
+    width: 42px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    border-radius: 15px;
+    background: rgb(251, 251, 251);
+    border: none;
+    padding: 0; 
+    border: 2px;
+    border-style: solid;
+}
+
+
+.comment-icon{
+    width: 14px;
+    height: 14px;
+    fill: #000;
+}
+
+.share-button {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 68px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: rgb(251, 251, 251);
+    padding: 0;
+    border: none;
+    gap: 4px; 
+    border: 2px;
+    border-style: solid;
+}
+
+.share-icon {
+    width: 17px;
+    height: 14px;
+    margin: 2px;
+    flex-shrink: 0;
+}
+
+.share-text {
+    color: #000;
+    font-family: "Segoe UI";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}

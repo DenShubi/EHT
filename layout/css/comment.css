@@ -1,0 +1,82 @@
+
+.comment-input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 668px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.comment-text {
+    width: 100%;
+    min-height: 50px;
+    max-height: 150px;
+    margin-bottom: 10px;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+    resize: none;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    overflow-y: auto;
+}
+
+form{
+    width: 650px;
+}
+
+.status-button {
+    padding: 4px 10px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 10px;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: rgba(201, 104, 104, 1);
+}
+
+.photo-profile {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: rgb(251, 251, 251);
+    border: 1px solid black;
+}
+
+.username-profile {
+    color: #000;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.user-comment {
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    margin-left: 34px;
+    line-height: 1.5;
+    margin-top: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 654px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile-post{
+    margin-top: 20px;
+}

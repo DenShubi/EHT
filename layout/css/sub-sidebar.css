@@ -1,0 +1,102 @@
+
+.sub-sidebar1 {
+    width: 300px;
+    height: 320px;
+    flex-shrink: 0;
+    position: fixed;
+    right: 60px;
+    top: 78px;
+    background: rgba(126, 172, 181, 1);
+    border-radius: 7px;
+    border: 4px;
+    border-style: solid;
+    z-index: 500;
+}
+
+.judul-sub-sidebar {
+    color: #000;
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: -0.72px;
+    margin: 15px 0 29px 15px;
+}
+
+.donasi-populer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 28px;
+    width: 230px;
+    margin-bottom: 18px;
+}
+
+.foto-donasi {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    border: 0.5px solid #000;
+}
+
+.text-donasi {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 0;
+}
+
+.judul-donasi, .terkumpul-donasi {
+    color: rgba(0, 0, 0, 1);
+    font-family: Helvetica;
+    font-size: 12px;
+    margin: 0;
+}
+
+
+.sub-sidebar2 {
+    width: 300px;
+    height: 320px;
+    flex-shrink: 0;
+    position: fixed;
+    flex-direction: row;
+    right: 60px;
+    top: 414px;
+    background: rgba(126, 172, 181, 1);
+    border-radius: 7px;
+    border: 4px;
+    border-style: solid;
+}
+
+.komunitas-populer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 28px;
+    width: 230px;
+    margin-bottom: 18px;
+}
+
+.foto-komunitas {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    border: 0.5px solid #000;
+}
+
+.text-komunitas {
+    display: flex;
+    flex-direction: column;
+    gap: 4px; 
+    margin: 0;
+}
+
+.judul-komunitas, .anggota-komunitas {
+    color: rgba(0, 0, 0, 1);
+    font-family: Helvetica;
+    font-size: 12px;
+    margin: 0;
+}

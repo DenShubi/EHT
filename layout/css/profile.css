@@ -1,0 +1,152 @@
+.judul-fitur{
+    color: #000;
+    font-family: Helvetica;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 40px;
+    z-index: 300;
+    width: 500px;
+}
+
+.text-profile{
+    color: #000;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.input-file{
+    margin-bottom: 20px;
+}
+
+
+.input-user-text{
+    width: 400px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: rgb(232, 232, 232);
+    border: 0;
+    margin-bottom: 20px;
+}
+
+.input-desc-text {
+    width: 400px;
+    height: 250px;
+    border-radius: 4px;
+    background: rgb(255, 255, 255);
+    border: none;
+    font-family: Helvetica; 
+    font-size: 14px;
+    line-height: 1.5; 
+    resize: none; 
+    border: 0;
+    margin-bottom: 20px;
+    padding: 10px 10px 10px 10px;
+}
+
+
+button{
+    margin-right: 20px;
+    display: inline-flex;
+    height: 30px;
+    padding: 7px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+    background-color: none;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover{
+    background-color: rgba(201, 104, 104, 1);
+}
+
+.container {
+    display: flex; 
+    gap: 20px; 
+    align-items: flex-start; 
+}
+
+.edit-container {
+    width: 410px; 
+}
+
+.preview-container {
+    margin-left: 30px;
+    width: 600px; 
+}
+
+.preview-box {
+    width: 600px;
+    padding: 10px;
+    box-shadow: 2px 9px 65px -14px rgba(0,0,0,0.39);
+    -webkit-box-shadow: 2px 9px 65px -14px rgba(0,0,0,0.39);
+    -moz-box-shadow: 2px 9px 65px -14px rgba(0,0,0,0.39);
+    border-radius: 15px;
+}
+
+.sampul-foto{
+    width: 600px;
+    height: 240px; 
+    border-radius: 8px;
+    object-fit: cover; 
+}
+
+.foto-profil{
+    width: 128px;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 128px;
+    object-fit: cover;
+    object-position: top;
+    box-shadow: 2px 9px 65px -14px rgba(0,0,0,0.39);
+}
+
+.username{
+    color: #000;
+    font-family: Helvetica;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.deskripsi {
+    color: #000;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    white-space: normal; 
+}
+
+
+.logout{
+    color: red;
+    font-family: Helvetica;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.hapus-akun{
+    color: red;
+    font-family: Helvetica;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+}

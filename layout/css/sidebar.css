@@ -1,0 +1,153 @@
+.sidebar {
+    position: fixed;
+    left: 0px;
+    top: 58px;
+    background-color: rgba(126, 172, 181, 1);
+    bottom: 0;
+    width: 258px;
+    border: 4px solid black;
+    box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.sidebar-text{
+    color: #000;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;   
+    line-height: normal;
+    color: #000;
+    text-decoration: none;
+}
+
+.home:hover, .donation:hover, .tentang:hover, .peta:hover, .berita:hover,
+.iklan:hover, .bantuan:hover{
+    width: 145px;
+    height: 25px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: rgba(201, 104, 104, 1);
+}
+
+.home{
+    display: flex;
+    width: 145px;
+    height: 25px;
+    padding: 12px 66px 9px 20px;
+    align-items: center;
+    flex-shrink: 0;
+    margin-left: 14px;
+    margin-top: 14px;
+}
+
+.home-icon{
+    flex-shrink: 0;
+    fill: #000;
+    margin-right: 10px;
+}
+
+.donation{
+    display: flex;
+    width: 145px;
+    height: 25px;
+    padding: 12px 66px 9px 20px;
+    align-items: center;
+    flex-shrink: 0;
+    margin-left: 14px;
+}
+
+.donasi-icon{
+    flex-shrink: 0;
+    fill: #000;
+    margin-right: 10px;
+}
+
+.sub-border{
+    width: 216px;
+    height: 1px;
+    flex-shrink: 0;
+    background: #000;
+    margin-left: 14px;
+}
+
+.komunitas-sidebar, .sumber-daya-sidebar{
+    color: #000;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 34px;
+    margin: 0;
+    margin: 27px 0px 0px 34px;
+}
+
+.komunitas-baru-saja-sidebar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 16px;
+    margin-left: 34px;
+    width: 230px;
+    margin-bottom: 18px;
+}
+
+.foto-komunitas-sidebar {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    border: 0.5px solid #000;
+}
+
+.text-komunitas-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 4px; 
+    margin: 0;
+}
+
+.judul-komunitas-sidebar, .anggota-komunitas-sidebar {
+    color: rgba(0, 0, 0, 1);
+    font-family: Helvetica;
+    font-size: 12px;
+    margin: 0;
+}
+
+.tentang{
+    display: flex;
+    width: 145px;
+    height: 25px;
+    padding: 12px 66px 9px 20px;
+    align-items: center;
+    flex-shrink: 0;
+    margin-left: 14px;
+    margin-top: 14px;
+}
+
+.tentang-icon{
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    fill: #000;
+    margin-right: 10px;
+}
+
+.peta, .berita, .iklan, .bantuan{
+    display: flex;
+    width: 145px;
+    height: 25px;
+    padding: 12px 66px 9px 20px;
+    align-items: center;
+    flex-shrink: 0;
+    margin-left: 14px;
+}
+
+.peta-icon, .berita-icon, .iklan-icon, .bantuan-icon{
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    fill: #000;
+    margin-right: 10px;
+}

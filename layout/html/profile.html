@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Saya</title>
+    <link rel="stylesheet" href="layout/css/profile.css">
+</head>
+
+<body style="padding: 124px 0px 0px 334px;
+            z-index: 500;
+            overflow-y: scroll;
+            background-color: rgba(255, 244, 234, 1);">
+
+    <?php include "layout/html/header-logged.html"; ?>
+    <?php include "layout/html/sidebar-logged.html"; ?>
+
+    <div class="judul-fitur">
+        Profil <span><?= htmlspecialchars($profileData['username']) ?></span>
+    </div>
+
+    <div class="container">
+        <div class="edit-container">
+            <form action="profile.php" method="post" enctype="multipart/form-data">
+
+                <div>
+                    <p class="text-profile">Foto Profil</p>
+                    <input class="input-file" type="file" name="profile_picture">
+                </div>
+
+             
+                <div>
+                    <p class="text-profile">Foto Sampul</p>
+                    <input class="input-file" type="file" name="cover_photo">
+                </div>
+
+             
+                <div>
+                    <p class="text-profile">Deskripsi</p>
+                    <textarea class="input-desc-text" name="description"><?= htmlspecialchars($profileData['description']) ?? '' ?></textarea>
+                </div>
+
+          
+                <div>
+                    <button type="reset">Batal</button>
+                    <button type="submit" name="save">Simpan</button>
+                </div>
+            </form>
+
+            <div class="logout">
+                <a href="logout.php" style="text-decoration: none; color: red;">Logout</a>
+            </div>
+
+            <div>
+                <form action="profile.php" method="post" onsubmit="return confirm('Apakah Anda yakin ingin menghapus akun Anda? Ini tidak dapat dibatalkan.')">
+                    <button class="hapus-akun" type="submit" name="delete_account" style="color: red; background: none; border: none; cursor: pointer; margin: 0; padding: 0;">
+                        Hapus Akun
+                    </button>
+                </form>
+                
+            </div>
+            
+        </div>
+
+        <div class="preview-container">
+            <p class="text-profile">Preview</p>
+            <div class="preview-box">
+                <div class="sampul-foto-box">
+                 
+                    <img class="sampul-foto" 
+                         src="<?= !empty($profileData['cover_photo']) 
+                                  ? htmlspecialchars($profileData['cover_photo']) 
+                                  : 'layout/Profile/default-cover.jpg' ?>" 
+                         alt="Foto Sampul">
+                </div>
+
+                <div class="foto-profil-username-box">
+                    <div>
+                
+                        <img class="foto-profil" 
+                             src="<?= !empty($profileData['profile_picture']) 
+                                      ? htmlspecialchars($profileData['profile_picture']) 
+                                      : 'layout/Profile/default-profile.jpg' ?>" 
+                             alt="Foto Profil">
+                    </div>
+
+                    <div>
+                        <div class="username">
+                            <?= htmlspecialchars($profileData['username']) ?>
+                        </div>
+
+                        <div class="deskripsi">
+                            <?= htmlspecialchars($profileData['description']) ?? 'Tambahkan deskripsi di sini.' ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
